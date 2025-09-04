@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de lanche</title>
+</head>
+<body>
+     <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Faça seu pedido aqui!</h1>
+
+    <form>
+        <!-- Dados do Cliente -->
+        <label>Nome:</label><br>
+        <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
+
+        <!-- Escolha do Lanche -->
+        <label>Escolha um lanche:</label><br>
+        <input type="radio" name="lanche" value="X-Salada" required> X-Salada<br>
+        <input type="radio" name="lanche" value="X-Bacon"> X-Bacon<br>
+        <input type="radio" name="lanche" value="X-Frango"> X-Frango<br><br>
+
+        <!-- Adicionais -->
+        <label>Adicionais:</label><br>
+        <input type="checkbox" name="adicionais" value="Batata Frita"> Batata frita<br>
+        <input type="checkbox" name="adicionais" value="Nuggets"> Nuggets<br>
+        <input type="checkbox" name="adicionais" value="Onion Rings"> Onion Rings<br><br>
+
+        <!-- Bebidas -->
+        <label>Bebida:</label><br>
+        <select name="bebida" required>
+            <option value="">-- Selecione --</option>
+            <option value="Refrigerante">Refrigerante</option>
+            <option value="Suco">Suco</option>
+            <option value="Água">Água</option>
+            <option value="Milkshake">Milkshake</option>
+        </select><br><br>
+
+        <!-- Observações -->
+        <label>Observações:</label><br>
+        <textarea name="observacoes" rows="4" cols="40" placeholder="Ex: sem cebola, bem passado..."></textarea><br><br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
+</body>
+</html>
