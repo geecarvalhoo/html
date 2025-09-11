@@ -1,0 +1,64 @@
+p{
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os subtítulos das categorias */
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #005599;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilo para os parágrafos das notícias */
+p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 15px auto;
+    text-align: justify;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Estilização do corpo do site */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rodapé simples */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+/* Deixa as seções com fundo branco e sombra */
+section.categoria {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
