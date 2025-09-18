@@ -1,0 +1,31 @@
+.item1, .item2, .item3, .item4 {
+    width: 50px;
+    height: 50px;
+}
+
+.item1{
+    background-color: deeppink;
+}
+
+.item2{
+    background-color: rgb(250, 153, 205);
+}
+
+.item3{
+    background-color: rgb(243, 185, 216);
+}
+
+.item4{
+    background-color: rgb(253, 224, 239);
+}
+
+.container{
+    border: 3px solid beige;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1
+}
