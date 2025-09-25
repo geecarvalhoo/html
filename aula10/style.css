@@ -1,0 +1,17 @@
+body {
+    /*imagem de funfo*/
+    background-image: url(img/img.jpg);
+background-repeat: no-repeat; /*não repete o fundo*/
+background-size: cover;/*contain - aumenta a imagem sem cortar (deixa espaços vazio)*/
+background-position: center;
+/* left, rigth, center, top, bottom*/
+background-attachment: scroll; 
+/*scroll - fundo mexe com o texto */
+/*fixed - o fundo fica fixo*/
+background-color: aqua;
+}
+
+p {
+font-size: 90px;
+}
+

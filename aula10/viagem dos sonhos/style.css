@@ -1,0 +1,76 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cores principais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background: #3b5998;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Introdução */
+.introducao {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Seções de lugares */
+.categoria {
+  background: #fff;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.categoria h2 {
+  color: #3b5998;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.categoria img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+}
+
+.categoria p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background: #3b5998;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
