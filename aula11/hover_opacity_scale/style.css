@@ -1,0 +1,7 @@
+img{
+    opacity: 0.5; /*valores entre 0 e 1*/
+}
+img:hover{
+    opacity: 1;
+    scale: 200%;
+}

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 50px; /* para não esconder conteúdo atrás do header */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 50px; /* distância do topo ao grudar */
+  background-color: #2ecc71;
+  padding: 15px;
+  margin: 20px 0;
+  color: white;
+}
+
+.relative-box {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: #e67e22;
+  padding: 15px;
+  color: white;
+  margin: 20px 0;
+}
+
+.absolute-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e74c3c;
+  padding: 15px;
+  color: white;
+}
