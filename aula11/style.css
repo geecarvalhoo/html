@@ -10,7 +10,6 @@ body {
   color: #fff;
 }
 
-/* ====== HEADER ====== */
 header {
   background-color: #d6a5a5;
   padding: 20px;
@@ -26,7 +25,6 @@ header a {
   font-size: 18px;
 }
 
-/* ====== HERO SECTION ====== */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -77,8 +75,6 @@ header a {
   max-width: 300px;
   border-radius: 10px;
 }
-
-/* ====== BENEFÍCIOS ====== */
 .benefits {
   background-color: #000;
   display: flex;
