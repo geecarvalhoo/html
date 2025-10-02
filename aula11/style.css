@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #d6a5a5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: #000;
+  padding: 40px 60px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text a {
+  display: inline-block;
+  background-color: #7a1818;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-text a:hover {
+  background-color: #a82020;
+  transform: scale(1.05);
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* ====== BENEFÍCIOS ====== */
+.benefits {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.benefits p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
