@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geovanna & João Pedro 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="fundo-animado"></div>
+
+  <!-- Menu -->
+  <header class="topo">
+    <h1>Geovanna & João Pedro</h1>
+    <nav>
+      <a href="#inicio" class="botao-menu">Início</a>
+      <a href="#historia" class="botao-menu">Nossa História</a>
+      <a href="#fotos" class="botao-menu">Fotos</a>
+      <a href="#mensagem" class="botao-menu">Mensagem</a>
+    </nav>
+  </header>
+
+  <!-- Início -->
+  <section id="inicio" class="secao pagina-inicio">
+    <h2>Bem-vindo ao nosso cantinho 💕</h2>
+    <p>Aqui vamos guardar nossos momentos mais fofos e especiais.</p>
+    <a href="#historia" class="botao-entrar">Entrar</a>
+  </section>
+
+  <!-- Nossa História -->
+  <section id="historia" class="secao pagina-historia">
+    <h2>Nossa História 💌</h2>
+    <div class="card">
+      <h3>Momento especial</h3>
+      <p>Aqui você pode escrever sobre como se conheceram.</p>
+      <p>O que mais gosta no outro, histórias engraçadas ou românticas.</p>
+      <p>Todos os detalhes fofos que fazem o relacionamento único 💞</p>
+    </div>
+  </section>
+
+  <!-- Fotos -->
+  <section id="fotos" class="secao pagina-fotos">
+    <h2>Nossas Fotos 📸</h2>
+    <div class="galeria">
+      <img src="1.jpeg" alt="Foto 1">
+      <img src="2.jpeg" alt="Foto 2">
+      <img src="3.jpeg" alt="Foto 3">
+      <img src="4.jpeg" alt="Foto 4">
+      <img src="5.jpeg" alt="Foto 2">
+      <img src="6.jpeg" alt="Foto 3">
+      <img src="7.jpeg" alt="Foto 4">
+    </div>
+  </section>
+
+  <!-- Mensagem -->
+  <section id="mensagem" class="secao pagina-mensagem">
+    <h2>Mensagem Final ✨</h2>
+    <p>Escreva aqui uma mensagem fofa e especial para seu amor.</p>
+    <p>Você pode adicionar palavras, promessas ou apenas um "Te amo" gigante 💞</p>
+  </section>
+
+  <footer>
+    <p>Feito com amor por Geovanna 💖</p>
+  </footer>
+
+  <script>
+    // Scroll suave para as âncoras
+    const links = document.querySelectorAll('a[href^="#"]');
+    for (const link of links) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  </script>
+
+</body>
+</html>

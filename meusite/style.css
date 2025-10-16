@@ -1,0 +1,168 @@
+/* Geral */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Fundo animado */
+.fundo-animado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ffd6e0, #ffeef2, #ffd6e0);
+  background-size: 200% 200%;
+  animation: gradiente 12s ease infinite;
+  z-index: -2;
+}
+@keyframes gradiente {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Corações flutuando */
+body::before {
+  content: "💖 💕 💞 💗 💓 💘";
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  top: 10%;
+  left: 0;
+  opacity: 0.3;
+  animation: coracoes 6s infinite alternate ease-in-out;
+  z-index: -1;
+}
+@keyframes coracoes {
+  0% { transform: translateY(0); opacity: 0.4; }
+  100% { transform: translateY(-40px); opacity: 0.7; }
+}
+
+/* Cabeçalho */
+.topo {
+  background-color: rgba(255, 182, 193, 0.95);
+  color: white;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.topo h1 {
+  margin: 0 0 10px 0;
+  font-size: 2em;
+}
+
+/* Menu de navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.botao-menu {
+  background-color: white;
+  color: #ff69b4;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.botao-menu:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Seções */
+.secao {
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+/* Diferença de cores para cada seção */
+.pagina-inicio { background: linear-gradient(120deg, #ffd6e0, #ffeef2); }
+.pagina-historia { background: linear-gradient(120deg, #ffe6f0, #ffd1e6); }
+.pagina-fotos { background: linear-gradient(120deg, #ffccdd, #ffb6c1); }
+.pagina-mensagem { background: linear-gradient(120deg, #ffc0cb, #ff99aa); }
+
+/* Botão Entrar */
+.botao-entrar {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.botao-entrar:hover {
+  background-color: #ff69b4;
+  transform: scale(1.1);
+}
+
+/* Card de destaque */
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 500px;
+  transition: all 0.4s ease;
+}
+.card:hover {
+  background-color: #ffe6ef;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.card p {
+  transition: all 0.5s ease;
+}
+.card p:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.card p:hover {
+  color: #ff1493;
+  font-size: 1.05em;
+}
+
+/* Galeria de fotos */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(255, 105, 180, 0.3);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.galeria img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5);
+  filter: brightness(1.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(255, 182, 193, 0.95);
+  color: white;
+  padding: 20px;
+  font-size: 1.1em;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Seções com fundo branco */
+.section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+/* Exercício 1 - Testando filtros */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filtros img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.img1 { filter: grayscale(100%); }
+.img2 { filter: sepia(100%); }
+.img3 { filter: invert(100%); }
+.img4 { filter: blur(4px); }
+.img5 { filter: brightness(150%); }
+.img6 { filter: contrast(200%); }
+
+/* Exercício 2 - Efeito ao passar o mouse */
+.efeito {
+    text-align: center;
+}
+
+.efeito img {
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.efeito img:hover {
+    transform: scale(1.2);
+    filter: brightness(130%);
+}
+
+/* Exercício 3 - Galeria de Filtros */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    filter: grayscale(100%) blur(3px);
+    transition: 0.4s ease;
+}
+
+.galeria img:hover {
+    filter: none;
+    transform: scale(1.05);
+}
