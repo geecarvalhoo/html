@@ -1,0 +1,12 @@
+div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.caixa1 {
+    background: linear-gradient(90deg, red,blue);
+}
+/*Por padrão de cima para baixo*/
+/*to right, to left, to bottom, to top*/
+/*to right = 90 deg - to bottom = 180deg*/
