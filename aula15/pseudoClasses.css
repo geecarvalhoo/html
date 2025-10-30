@@ -1,0 +1,110 @@
+* Exercício 1 */
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn1 { background: red; }
+.btn1:hover { background: orange; }
+
+.btn2 { background: green; }
+.btn2:hover { background: lime; }
+
+.btn3 { background: blue; }
+.btn3:hover { background: skyblue; }
+
+/* Exercício 2 */
+.btn-active {
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    border: none;
+    transition: .2s;
+}
+.btn-active:active {
+    transform: scale(.85);
+}
+
+/* Exercício 3 */
+.campo {
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid gray;
+    outline: none;
+    transition: .3s;
+}
+.campo:focus {
+    border-color: blue;
+    box-shadow: 0 0 8px rgba(0,0,255,.5);
+}
+
+/* Exercício 4 */
+.card {
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eee;
+    transition: .3s;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    background: #ddd;
+}
+
+/* Exercício 5 */
+.galeria img {
+    width: 200px;
+    margin: 5px;
+    transition: .3s;
+}
+.galeria img:hover {
+    filter: grayscale(100%);
+}
+
+/* Exercício 6 */
+.estado-btn {
+    padding: 10px 20px;
+    background: gray;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.estado-btn:hover { background: lightblue; }
+.estado-btn:focus { outline: 2px solid black; }
+.estado-btn:active {
+    background: darkblue;
+    transform: scale(.85);
+    color: white;
+}
+
+/* Exercício 7 */
+.form-field {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid gray;
+    transition: .2s;
+}
+.form-field:focus {
+    border-color: dodgerblue;
+}
+
+.form-btn {
+    padding: 10px 20px;
+    background: gray;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.form-btn:hover {
+    background: cornflowerblue;
+}
+.form-btn:active {
+    transform: scale(.85);
+}
