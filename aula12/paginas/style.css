@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 15px;
+}
+
+.produto {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+.produto img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

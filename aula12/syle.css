@@ -1,0 +1,53 @@
+/*CSS*/
+body {
+    display: grid;
+    
+    grid-template-columns: 20% 60% 20%; /*três colunas*/
+    grid-template-rows: 20% 60% 20%; /*três linhas*/
+
+    height: 100vh;
+    gap: 10px;
+
+    grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+    ;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(0, 255, 255);
+}
+header{
+    grid-area: header;
+    background-color: rgb(138, 43, 226);
+}
+nav {
+    grid-area: nav;
+    background-color: rgb(0, 128, 0);
+}
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 0) ;
+}
+aside {
+    grid-area: aside;
+    background-color: orange;
+}
+header, footer {
+    color:white
+}
+
+header,
+footer,
+nav,
+main,
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    flex-direction: column;
+}

@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+}
+
+.cor1 {
+     background-color: red; }
+.cor2 {
+     background-color: orange; }
+.cor3 { 
+    background-color: yellow; }
+.cor4 { 
+    background-color: green; }
+.cor5 
+{ background-color: blue; }
+.cor6 {
+     background-color: purple; }
+.cor7 { 
+    background-color: pink; }
+.cor8 {
+     background-color: cyan; }
+.cor9 {
+     background-color: brown; }
+.cor10 { 
+    background-color: gray; }
+.cor11 { 
+    background-color: lightgreen; }
+.cor12 { background-color: gold; }
