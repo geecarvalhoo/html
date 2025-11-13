@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contagem Regressiva — Viagem de Natal 🎅✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decoracao">
+    <img src="pngtree-christmas-tree-cartoon-png-image_6518683.png" alt="Árvore de Natal" class="arvore">
+    <img src="2cd667aa50c270253d8d8f16531214c0-fita-de-papai-noel.webp" alt="Papai Noel" class="papai-noel">
+    <img src="1997740.png" alt="Presentes" class="presentes">
+  </div>
+
+  <header>
+    <h1>🎄 Contagem Regressiva para Nossa Viagem! 🎁</h1>
+    <h2>Destino: Natal em Família — 22/12/2025 </h2>
+  </header>
+
+  <div class="countdown">
+    <div class="box">
+      <div id="days" class="number">0</div>
+      <div class="label">Dias</div>
+    </div>
+    <div class="box">
+      <div id="hours" class="number">0</div>
+      <div class="label">Horas</div>
+    </div>
+    <div class="box">
+      <div id="minutes" class="number">0</div>
+      <div class="label">Minutos</div>
+    </div>
+    <div class="box">
+      <div id="seconds" class="number">0</div>
+      <div class="label">Segundos</div>
+    </div>
+  </div>
+
+  <footer>
+    Feito com ❤️ e espírito natalino — para minha família linda!
+  </footer>
+
+  <script>
+    const targetDate = new Date("2025-12-22T00:00:00");
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.querySelector(".countdown").innerHTML = "<h2>🎉 Chegou o grande dia! Boa viagem, família! ✈️🎄</h2>";
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Efeito de neve
+    const snowflakes = ["❄", "✶", "❅", "❆"];
+    setInterval(() => {
+      const snow = document.createElement("div");
+      snow.classList.add("snowflake");
+      snow.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+      snow.style.left = Math.random() * 100 + "vw";
+      snow.style.fontSize = Math.random() * 20 + 10 + "px";
+      snow.style.animationDuration = Math.random() * 5 + 5 + "s";
+      document.body.appendChild(snow);
+      setTimeout(() => snow.remove(), 10000);
+    }, 300);
+  </script>
+</body>
+</html>

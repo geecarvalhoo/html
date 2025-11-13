@@ -1,0 +1,15 @@
+body{
+    height: 300vh;
+}
+::-webkit-scrollbar{
+    /*espaço*/
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    /*cor de fundo*/
+    background-color: hotpink;
+}
+::-webkit-scrollbar-thumb{
+    /*cor da barra*/
+    background-color: lightpink;
+}
